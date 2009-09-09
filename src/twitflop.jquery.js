@@ -13,7 +13,7 @@
     };
 
     jQuery.fn.twitflop.defaults = {
-        user: 'mrjase',
+        user: 'd',
         history: '20',
         output: '<p>[TW_TEXT]</p>'
     };

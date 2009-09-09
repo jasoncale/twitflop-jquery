@@ -5,6 +5,8 @@ Hook in html and tweet like so ..
 Add the following jquery ..
 
 $(document).ready(function() {
+  $.fn.twitflop.defaults['user'] = 'mrjase';
+  
   $('.tweet').tweetog({output: '[TW_USER] tweeted <strong>[TW_TEXT]</strong>'});
 });
 

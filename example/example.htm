@@ -5,6 +5,8 @@
 <script src="../src/twitflop.jquery.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function() {
+    $.fn.twitflop.defaults['user'] = 'mrjase';
+    
     $('.tweet').twitflop({output: '[TW_USER] tweeted <strong>[TW_TEXT]</strong> from [TW_SOURCE]'});
   }); 
 </script>
