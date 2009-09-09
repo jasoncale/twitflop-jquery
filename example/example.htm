@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+<script src="../src/twitflop.jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('.tweet').tweetog({output: '[TW_USER] tweeted <strong>[TW_TEXT]</strong>'});
+  }); 
+</script>
+
+</head>
+<body>
+	<h2>Latest tweet</h2>
+	<p class="tweet"></p>
+</body>
+</html>
