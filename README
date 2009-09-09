@@ -1,0 +1,27 @@
+Hook in html and tweet like so ..
+
+<p class="tweet"></p>
+
+Add the following jquery ..
+
+$(document).ready(function() {
+  $('.tweet').tweetog({output: '[TW_USER] tweeted <strong>[TW_TEXT]</strong>'});
+});
+
+And the tweet will appear by magic ..
+
+By default the first tweet that isn't an @reply will be shown.
+
+The next stuff I'm going to add is to only pick up certain tweets, ie #hashtags or whatever.
+
+The output is determined by a string you pass to the twitflop function, and has replacement values so far..
+
+[TW_TEXT] - The tweet text
+[TW_USER] - Name of tweeter, eg. Jason Cale
+[TW_SCREEN_NAME] - the twitter username eg. mrjase
+[TW_SOURCE] - where the tweet came from .. ie tweetie
+[TW_CREATED_AT] - date (currently as timestamp, but will add relative time option)
+[TW_REPLY_TO] - User replying to ..
+[TW_REPLY_STATUS] - Status ID of the tweet replying to .. for linking etc ..
+
+Early days but hopefully will be useful ..
