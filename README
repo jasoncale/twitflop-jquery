@@ -7,7 +7,7 @@ Add the following jquery ..
 $(document).ready(function() {
   $.fn.twitflop.defaults['user'] = 'mrjase';
   
-  $('.tweet').tweetog({output: '[TW_USER] tweeted <strong>[TW_TEXT]</strong>'});
+  $('.tweet').twitflop({output: '[TW_USER] tweeted <strong>[TW_TEXT]</strong>'});
 });
 
 And the tweet will appear by magic ..
